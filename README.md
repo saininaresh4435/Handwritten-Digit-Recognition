@@ -22,6 +22,15 @@ The training can be executed by the following command.In config file we can have
 ```bash
 $ python training.py 
 ```
+
+## Keras to tflite model converter
+This can be done using keras_to_tf_converter.py module. As a input it takes path of keras model and save path where we want to save the tflite model. Define them in config.py.
+
+#### How to run
+```bash
+$ python keras_to_tf_converter.py 
+```
+
 ### Evaluation
 ##### prediction.ipynb for benchmarking the test dataset for both keras and tflite model at digit and roll number level
 #### Config Parameters
