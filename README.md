@@ -15,6 +15,11 @@ This repository is for handwritten digit recognition which is integrated to Sara
 - Data augmentation: rotation, width shift, height shift, shearing, zooming
 
 
+##### To install packages run this command line
+```bash
+$ pip install -r requirement.txt 
+```
+
 ## Training
 The training can be executed by the following command.In config file we can have to update training data path and model specific parameters. Once the training is done trained model will be saved in the given path.
 

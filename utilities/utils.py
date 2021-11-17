@@ -1,9 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from collections import defaultdict
-from keras.utils import np_utils
-from keras.datasets import mnist
-from keras.preprocessing.image import ImageDataGenerator
+#from tensorflow.keras.utils import np_utils
+import np_utils
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import glob
 import random
 import cv2
@@ -69,8 +71,10 @@ def load_mnist():
     x_test = x_test.reshape(-1, 28, 28, 1)
     x_train = normalize_images(x_train)
     x_test = normalize_images(x_test)
-    y_train = np_utils.to_categorical(y_train) # encode one-hot vector
-    y_test = np_utils.to_categorical(y_test)
+    # y_train = np_utils.to_categorical(y_train) # encode one-hot vector
+    # y_test = np_utils.to_categorical(y_test)
+    y_train = to_categorical(y_train) # encode one-hot vector
+    y_test = to_categorical(y_test)
    
 
     num_of_test_data = config.TEST_DATA_SIZE

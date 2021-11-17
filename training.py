@@ -1,8 +1,15 @@
-from keras.callbacks import ReduceLROnPlateau
-from keras.layers import (Input, Conv2D, BatchNormalization, ZeroPadding2D,
+# from keras.callbacks import ReduceLROnPlateau
+# import tensorflow as tf
+# from keras.layers import (Input, Conv2D, BatchNormalization, ZeroPadding2D,
+#                           GlobalAveragePooling2D, Activation, Dense, add)
+# from keras.models import Model
+# from keras import optimizers
+from tensorflow.keras.callbacks import ReduceLROnPlateau
+import tensorflow as tf
+from tensorflow.keras.layers import (Input, Conv2D, BatchNormalization, ZeroPadding2D,
                           GlobalAveragePooling2D, Activation, Dense, add)
-from keras.models import Model
-from keras import optimizers
+from tensorflow.keras.models import Model
+from tensorflow.keras import optimizers
 from utilities.base_model import BaseModel
 from utilities.train_resnet import train
 

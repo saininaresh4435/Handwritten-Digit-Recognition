@@ -1,4 +1,4 @@
-from keras.utils.vis_utils import plot_model
+from tensorflow.keras.utils import plot_model
 from utilities import utils
 
 class BaseModel(object):
