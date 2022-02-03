@@ -79,6 +79,20 @@ optional arguments:
    
     
 ```
+
+#### Train WGAN Model for handwritten digit image generation
+In "handwritten_digit_image_generation_using_WGAN.py" file we have to define training image path, model save path,pre-trained model path for fine-tuning, latent space vector size and model save after how many epochs.
+
+```bash
+$ python handwritten_digit_image_generation_using_WGAN.py 
+```
+#### Generate handwritten digit images
+
+In "eval_gan.py" define model path , image save path, latent dims and number of samples to be generated.
+
+```bash
+$ python eval_gan.py 
+```
 #### ResNet Implementation
 - [ResNet Author's Implementation](https://github.com/KaimingHe/resnet-1k-layers/blob/master/resnet-pre-act.lua)
 
