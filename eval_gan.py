@@ -8,8 +8,8 @@ import os
 
 
 
-TRAINED_MODEL_PATH="./models/wgan/wgan_model_v1_digit_3_48000.h5"
-IMAGE_SAVE_PATH="./generated_images/wgan/digit_3_48000/"
+TRAINED_MODEL_PATH="./models/wgan/wgan_model_v4_digit_7_33600_.h5"
+IMAGE_SAVE_PATH="/home/naresh/Tarento/Handwritten-Digit-Recognition/generated_images/wgan/wgan_model_v4_digit_7_33600/"
 
 
 ###### load trained generator model
@@ -19,7 +19,7 @@ model = load_model(TRAINED_MODEL_PATH)
 latent_dim = 50
 
 ##### no of samples to generate
-n_samples=100
+n_samples=5500
 
 def generate_latent_points(latent_dim, n_samples):
     # generate points in the latent space

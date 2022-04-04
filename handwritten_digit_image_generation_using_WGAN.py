@@ -25,13 +25,14 @@ from matplotlib import pyplot
 ############### config parameters
 
 ##### training image paths
-IMAGE_PATH="./final_train_data/3/*.jpg"
+IMAGE_PATH="./final_train_data/7/*.jpg"
 ##### model save path
-MODEL_SAVE_PATH="./models/wgan/wgan_model_v2_digit_3"
+MODEL_SAVE_PATH="./models/wgan/wgan_model_v4_digit_7"
 # size of the latent space
 latent_dim = 50
 #### available model path for fine tuning else make it None
-FINE_TUNE_MODEL_PATH='./models/wgan/wgan_model_v1_digit_3_48000.h5'
+FINE_TUNE_MODEL_PATH='./models/wgan/wgan_model_v3_digit_7_8400_.h5'
+#FINE_TUNE_MODEL_PATH=None
 
 #### save model after every 20 epochs
 SAVE_EPOCHS=20
